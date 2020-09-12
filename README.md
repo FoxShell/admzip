@@ -1,5 +1,5 @@
 # admzip
-Manipulate zip files. Adm-zip like project for VFP.
+Manipulate zip files. Adm-zip.js like, for VFP.
 
 
 ## Import library
