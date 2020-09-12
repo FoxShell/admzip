@@ -76,59 +76,123 @@ zipFile#getEntry(name: string) : ZipEntry
 Return the entry by name
 
 
-**```zipFile#read(entry: zipEntry) : string```**
-- Read an entry
+```typescript 
+zipFile#read(entry: zipEntry) : string
+```
 
-**```zipFile#deleteFile(entry: zipEntry) : void```**
-- Delete an entry file
-
-**```zipFile#addZipComment(comment: string) : void```**
-- Add a comment to zip file
-
-**```zipFile#getZipComment() : string```**
-- Return the zip file comment
-
-**```zipFile#addZipEntryComment(entry: zipEntry, comment: string) : void```**
-- Add a comment for entry 
-
-**```zipFile#getZipEntryComment(entry: zipEntry) : string```**
-- Return the comment for a zip entry 
-
-**```zipFile#updateFile(entry: zipEntry, content: string) : void```**
-- Update the entry file content
+Read an entry
 
 
-**```zipFile#addLocalFile(localPath: string, zipPath: string) : void```**
-- Adds a local file to zip file
 
-**```zipFile#addLocalFolder(localPath: string, zipPath: string) : void```**
-- Add a local folder to zip file
+```typescript
+zipFile#deleteFile(entry: zipEntry) : void
+```
 
-**```zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void```**
-- Add a new file to zip. Comment and attr are optional
+Delete an entry file
 
-**```zipFile#extractEntryTo(entry: zipEntry, path: string, preserveFullPath?: boolean = false, overwrite?: boolean = true ) : void```**
-- Extract an entry to file. 
 
-**```zipFile#extractAllTo(path: string, overwrite?: boolean = true ) : void```**
-- Extract all files from zip to folder
+```typescript
+zipFile#addZipComment(comment: string) : void
+```
 
-**```zipFile#writeZip(path?: string) : void```**
-- Write zip file to disk. If no parameter passed used from passed to ```zipStatic#get```
+Add a comment to zip file
 
-**```zipFile#destroy() : void```**
-- Free memory used for zip creation/reading.
+
+```typescript
+zipFile#getZipComment() : string
+```
+
+Return the zip file comment
+
+
+```typescript 
+zipFile#addZipEntryComment(entry: zipEntry, comment: string) : void
+```
+
+Add a comment for entry 
+
+
+```typescript
+zipFile#getZipEntryComment(entry: zipEntry) : string
+```
+
+Return the comment for a zip entry 
+
+
+```typescript
+zipFile#updateFile(entry: zipEntry, content: string) : void
+```
+
+Update the entry file content
+
+
+```typescript 
+zipFile#addLocalFile(localPath: string, zipPath: string) : void
+```
+
+Adds a local file to zip file
+
+
+```typescript
+zipFile#addLocalFolder(localPath: string, zipPath: string) : void
+```
+
+Add a local folder to zip file
+
+
+```typescript 
+zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void
+```
+
+Add a new file to zip. Comment and attr are optional
+
+
+```typescript 
+zipFile#extractEntryTo(entry: zipEntry, path: string, preserveFullPath?: boolean = false, overwrite?: boolean = true ) : void
+```
+
+Extract an entry to file. 
+
+
+```typescript
+zipFile#extractAllTo(path: string, overwrite?: boolean = true ) : void
+```
+
+Extract all files from zip to folder
+
+
+```typescript
+zipFile#writeZip(path?: string) : void
+```
+
+Write zip file to disk. If no parameter passed used from passed to ```zipStatic#get```
+
+
+```typescript
+zipFile#destroy() : void
+```
+
+Free memory used for zip creation/reading.
+
 
 
 ### zipEntry class
 
-**```zipEntry#attr : number```**
+```typescript
+zipEntry#attr : number
+```
 Attr for entry
 
-**```zipEntry#comment : string```**
+
+```typescript
+zipEntry#comment : string
+```
 Comment for entry. Empty if not present
 
-**```zipEntry#entryName : string```** 
+
+```typescript
+zipEntry#entryName : string
+``` 
 Full path name in zip file for entry
 
 
