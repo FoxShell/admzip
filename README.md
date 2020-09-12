@@ -14,7 +14,7 @@ That's all, you are ready to use. See the examples
 This project is inspirated on [https://github.com/cthackers/adm-zip/wiki/ADM-ZIP](https://github.com/cthackers/adm-zip/wiki/ADM-ZIP)
 
 Create a zip file is very easy
-```dbase
+```harbour
 
 * load 
 DO (GETENV("userprofile") + "\Kawix\Shide\interop")
