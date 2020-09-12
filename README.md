@@ -51,20 +51,30 @@ ONly there are few changes:
 
 ### zipStatic class 
 
-**
+
 ```typescript 
 zipStatic#get(path?: string) : zipFile
 ```
-**
-- Return a new zipFile object. Created in memory if not parameter, or read if file exists
+
+Return a new zipFile object. Created in memory if not parameter, or read if file exists
+
+
 
 ### zipFile class
 
-**```zipFile#getEntries() : Array<zipEntry>```**
-- Return the entries of zip file
+```typescript
+zipFile#getEntries() : Array<zipEntry>
+```
 
-**```zipFile#getEntry(name: string) : ZipEntry```**
-- Return the entry by name
+Return the entries of zip file
+
+
+```typescript 
+zipFile#getEntry(name: string) : ZipEntry
+```
+
+Return the entry by name
+
 
 **```zipFile#read(entry: zipEntry) : string```**
 - Read an entry
