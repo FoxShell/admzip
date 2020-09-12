@@ -87,19 +87,19 @@ zipFile#updateFile(entry: zipEntry, content: string) : void
 zipFile#addLocalFile(localPath: string, zipPath: string) : void
 - Adds a local file to zip file
 
-zipFile#addLocalFolder(localPath: string, zipPath: string) : void
+```zipFile#addLocalFolder(localPath: string, zipPath: string) : void```
 - Add a local folder to zip file
 
-zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void
+```zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void```
 - Add a new file to zip. Comment and attr are optional
 
-zipFile#extractEntryTo(entry: zipEntry, path: string, preserveFullPath?: boolean = false, overwrite?: boolean = true ) : void
+```zipFile#extractEntryTo(entry: zipEntry, path: string, preserveFullPath?: boolean = false, overwrite?: boolean = true ) : void```
 - Extract an entry to file. 
 
-zipFile#extractAllTo(path: string, overwrite?: boolean = true ) : void
+```zipFile#extractAllTo(path: string, overwrite?: boolean = true ) : void```
 - Extract all files from zip to folder
 
-zipFile#writeZip(path?: string) : void
+```zipFile#writeZip(path?: string) : void```
 - Write zip file to disk. If no parameter passed used from passed to ```zipStatic#get```
 
 
