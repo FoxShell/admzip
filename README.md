@@ -29,7 +29,7 @@ local zip
 * without parameter create new zip file in memory
 zip = AdmZip.get()
 zip.addFile("readme", "ADM ZIP for VFP Rocks!")
-zip.addFile("nested/file", "This is a nested file")
+zip.addFile("directory/file", "This is a file inside directory")
 zip.writeZip("c:/path/to/save.zip")
 * free memory
 zip.destroy()
