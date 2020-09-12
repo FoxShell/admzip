@@ -17,14 +17,19 @@ zip.addFile("nested/file", "This is a nested file")
 
 * write ZIP to file
 local file
-file = getfile(".zip")
+file = getfile("zip")
 
-zip.writeZip(m.filetowrite)
+WAIT "Saving ZIP file" WINDOW TIMEOUT 2
+zip.writeZip(m.file)
+
+* free memory
+zip.destroy()
 
 
 
 * now read file ...
 
+WAIT "Reading ZIP file" WINDOW TIMEOUT 2
 zip = AdmZip.get(m.file)
 
 * get entries and list in screen
@@ -39,10 +44,11 @@ endfor
 local folder
 folder = getdir()
 
-zip.extractAllTo(folder, .t.)
+WAIT "extracting to folder" WINDOW TIMEOUT 2
+zip.extractAllTo(folder  + "\extracted", .t.)
 
-
-
+* free memory
+zip.destroy()
 
 
 
