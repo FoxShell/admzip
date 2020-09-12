@@ -102,6 +102,9 @@ ONly there are few changes:
 **```zipFile#writeZip(path?: string) : void```**
 - Write zip file to disk. If no parameter passed used from passed to ```zipStatic#get```
 
+**```zipFile#destroy() : void```**
+- Free memory used for zip creation/reading.
+
 
 ### zipEntry class
 
