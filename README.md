@@ -51,7 +51,9 @@ ONly there are few changes:
 
 ### zipStatic class 
 
-**```zipStatic#get(path?: string) : zipFile```**
+**```typescript 
+zipStatic#get(path?: string) : zipFile
+```**
 - Return a new zipFile object. Created in memory if not parameter, or read if file exists
 
 ### zipFile class
