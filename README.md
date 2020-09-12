@@ -51,46 +51,46 @@ ONly there are few changes:
 
 ### zipStatic class 
 
-zipStatic#get(path?: string) : zipFile
+**```zipStatic#get(path?: string) : zipFile```**
 - Return a new zipFile object. Created in memory if not parameter, or read if file exists
 
 ### zipFile class
 
-zipFile#getEntries() : Array<zipEntry>
+**```zipFile#getEntries() : Array<zipEntry>```**
 - Return the entries of zip file
 
-zipFile#getEntry(name: string) : ZipEntry
+**```zipFile#getEntry(name: string) : ZipEntry```**
 - Return the entry by name
 
-zipFile#read(entry: zipEntry) : string
+**```zipFile#read(entry: zipEntry) : string```**
 - Read an entry
 
-zipFile#deleteFile(entry: zipEntry) : void
+**```zipFile#deleteFile(entry: zipEntry) : void```**
 - Delete an entry file
 
-zipFile#addZipComment(comment: string) : void
+**```zipFile#addZipComment(comment: string) : void```**
 - Add a comment to zip file
 
-zipFile#getZipComment() : string
+**```zipFile#getZipComment() : string```**
 - Return the zip file comment
 
-zipFile#addZipEntryComment(entry: zipEntry, comment: string) : void
+**```zipFile#addZipEntryComment(entry: zipEntry, comment: string) : void```**
 - Add a comment for entry 
 
-zipFile#getZipEntryComment(entry: zipEntry) : string
+**```zipFile#getZipEntryComment(entry: zipEntry) : string```**
 - Return the comment for a zip entry 
 
-zipFile#updateFile(entry: zipEntry, content: string) : void
+**```zipFile#updateFile(entry: zipEntry, content: string) : void```**
 - Update the entry file content
 
 
-zipFile#addLocalFile(localPath: string, zipPath: string) : void
+**```zipFile#addLocalFile(localPath: string, zipPath: string) : void```**
 - Adds a local file to zip file
 
-```zipFile#addLocalFolder(localPath: string, zipPath: string) : void```
+**```zipFile#addLocalFolder(localPath: string, zipPath: string) : void```**
 - Add a local folder to zip file
 
-```zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void```
+**```zipFile#addFile(entryName: string, content: string, comment?: string, attr?: number) : void```**
 - Add a new file to zip. Comment and attr are optional
 
 **```zipFile#extractEntryTo(entry: zipEntry, path: string, preserveFullPath?: boolean = false, overwrite?: boolean = true ) : void```**
@@ -105,13 +105,13 @@ zipFile#addLocalFile(localPath: string, zipPath: string) : void
 
 ### zipEntry class
 
-zipEntry#attr : number 
+**```zipEntry#attr : number```**
 Attr for entry
 
-zipEntry#comment : string 
+**```zipEntry#comment : string```**
 Comment for entry. Empty if not present
 
-zipEntry#entryName : string 
+**```zipEntry#entryName : string```** 
 Full path name in zip file for entry
 
 
